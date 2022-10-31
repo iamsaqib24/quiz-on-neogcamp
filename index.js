@@ -31,12 +31,12 @@ var questions = [
 function play(question, answer) {
   var userAnswer = readlineSync.question(question);
 
-  if(userAnswer.toLowerCase === answer.toLowerCase){
+  if(userAnswer === answer){
     console.log('Correct');
     score++;
   }else{
     console.log('wrong answer!');
-    score--;
+    // score--;
   }
   console.log('Your current score is : ', score);
   console.log('------Next Question------');
